@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Chart</title>
+</head>
+<body>
+    <div class="visualization">
+        <h2  align="center">MEDICAL INSURANCE USER PROFILE</h2>
+        <div id="barchart1">
+            <br>
+            <br>
+            <h2 align="center">Number of child</h2>
+            <canvas id="myChart" style="max-width:300px;max-height:300px"></canvas>
+            <script>
+            const ctx = document.getElementById('myChart').getContext('2d');
+            const myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['0', '1', '2', '3', '4', '5'],
+                    datasets: [{
+                        label: 'number of people',
+                        data: [ 574, 324, 240, 157, 25, 18],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    },
+                    title:{
+                        display: true,
+                        text: 'Number of child'
+                    }
+                }
+            });
+            </script>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="barchart2">
+            <h2  align="center">Region in US</h2>
+            <canvas id="myChart_" style="max-width:300px;max-height:300px"></canvas>
+            <script>
+            const ctx_ = document.getElementById('myChart_').getContext('2d');
+            const myChart_ = new Chart(ctx_, {
+                type: 'bar',
+                data: {
+                    labels: ['northwest','southeast','southwest','northeast'],
+                    datasets: [{
+                        label: 'number of people',
+                        data: [ 324, 325, 325, 364],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+            </script>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="barchart3">
+            <h2  align="center">Smoker</h2>
+            <canvas id="myChart__" style="max-width:300px;max-height:300px"></canvas>
+            <script>
+            const ctx__ = document.getElementById('myChart__').getContext('2d');
+            const myChart__ = new Chart(ctx__, {
+                type: 'bar',
+                data: {
+                    labels: ['Smoker','Non-Smoker'],
+                    datasets: [{
+                        label: 'number of people',
+                        data: [ 274, 1064],
+                        backgroundColor: [
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+            </script>
+        </div>
+    </div>
+</body>
+</html>

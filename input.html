@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xml>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input user data</title>
+    <link rel="stylesheet" type=text/css href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+</head>
+<body>
+<div align ="center">
+    <h2 font face="Serif" size="24"><strong>Please fill in your personal data</strong></h2>
+    <br>
+    <form action="/rg", method="POST">
+    <table>
+        <tr font face="Times" size="18">
+            <td>Age</td>
+            <td><input type="text" name="Age" class = "form-control"></td>
+        </tr>
+        <tr>
+            <td>Body Mass Index</td>
+            <td><input type="text" name="BMI" class = "form-control"></td>
+        </tr>
+        <tr>
+            <td>Number of children</td>
+            <td><input type="text" name="Number of children" class = "form-control"></td>
+        </tr>
+        <tr>
+            <td>Smoker (yes/no)</td>
+            <td><input type="text" name= "Smoker (yes/no)" class = "form-control"></td>
+        </tr>
+        <tr>
+            <td>Region (northwest/southeast/southwest/northeast)</td>
+            <td><input type="text" name= "Region in US" class = "form-control"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="save" class = "btn btn-primary">
+            </td>
+        </tr>
+    </table>
+    </form>
+</div>
+</body>
+</html>
